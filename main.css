@@ -47,7 +47,6 @@ header {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: var(--spacingS);
 }
 
 .container h1 {
@@ -150,10 +149,6 @@ header {
     align-items: center;
   }
 
-  .flex img.mockup {
-    margin-top: var(--spacingM);
-  }
-
   .container p {
     font-size: var(--text);
   }
@@ -181,5 +176,9 @@ header {
 
   .footer {
     margin-top: 0;
+  }
+
+  .container .newsletter input[type="text"] {
+    width: 30%;
   }
 }
