@@ -16,8 +16,8 @@
   /* Typography */
   --font: "Montserrat", sans-serif;
   --small: 9px;
-  --h1: 60px;
-  --h1-mobile: 30px;
+  --h1: 80px;
+  --h1-mobile: 40px;
   --text: 20px;
 }
 
@@ -51,6 +51,7 @@ header {
   text-transform: uppercase;
   color: var(--white);
   font-size: var(--h1-mobile);
+  margin-bottom: var(--spacingM);
 }
 
 .container h1 span {
@@ -62,7 +63,7 @@ header {
   color: var(--white-opacity);
   font-size: var(--text);
   line-height: 140%;
-  margin-bottom: var(--spacingL);
+  margin-bottom: var(--spacingM);
 }
 
 .container .newsletter p {
@@ -110,11 +111,46 @@ header {
 .footer {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer p {
   color: var(--grey);
   font-size: var(--small);
-  width: 80%;
+  width: 70%;
   text-align: right;
+}
+
+/** RESPONSIVE **/
+@media screen and (min-width: 576px) {
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex img.mockup {
+    margin-top: var(--spacingM);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container h1 {
+    font-size: var(--h1);
+  }
+
+  .container p {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .flex img.mockup {
+    width: 28%;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
 }
