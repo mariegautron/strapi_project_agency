@@ -5,6 +5,8 @@
   --white: white;
   --white-opacity: rgba(255, 255, 255, 0.7);
   --grey: #a4a2a2;
+  --red: #d62839;
+  --red-light: #fff0f2;
 
   /*Spacing*/
   --spacingXS: 0.5rem;
@@ -15,10 +17,11 @@
 
   /* Typography */
   --font: "Montserrat", sans-serif;
-  --small: 9px;
+  --small: 12px;
   --h1: 80px;
   --h1-mobile: 40px;
   --text: 20px;
+  --text-mobile: 16px;
 }
 
 body {
@@ -61,7 +64,7 @@ header {
 
 .container p {
   color: var(--white-opacity);
-  font-size: var(--text);
+  font-size: var(--text-mobile);
   line-height: 140%;
   margin-bottom: var(--spacingM);
 }
@@ -83,6 +86,9 @@ header {
   border-radius: 10px 0px 0px 10px;
   padding: 0rem var(--spacingS);
   background-color: transparent;
+  outline: none;
+  font-family: var(--font);
+  color: white;
 }
 
 .container .newsletter input[type="text"]::placeholder {
@@ -96,16 +102,26 @@ header {
   padding: var(--spacingXS) var(--spacingS);
   -webkit-appearance: none;
   border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  outline: none;
 }
 
-.social-media {
+.footer .social-media {
   display: flex;
   justify-content: flex-end;
 }
 
-.social-media img {
+.footer .social-media a {
+  cursor: pointer;
+}
+
+.footer .social-media a:hover {
+  background-color: var(--red-light);
+  border-radius: 10px;
+}
+
+.footer .social-media a img {
   padding: var(--spacingXS);
-  margin-top: var(--spacingS);
 }
 
 .footer {
@@ -122,6 +138,11 @@ header {
   text-align: right;
 }
 
+.footer p a:hover {
+  color: var(--red);
+  cursor: pointer;
+}
+
 /** RESPONSIVE **/
 @media screen and (min-width: 576px) {
   .flex {
@@ -131,6 +152,14 @@ header {
 
   .flex img.mockup {
     margin-top: var(--spacingM);
+  }
+
+  .container p {
+    font-size: var(--text);
+  }
+
+  .footer p {
+    font-size: var(--small);
   }
 }
 
