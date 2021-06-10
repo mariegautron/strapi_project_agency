@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --white: white;
+  --white-opacity: rgba(255, 255, 255, 0.7);
+  --grey: #a4a2a2;
+  --red: #d62839;
+  --red-light: #fff0f2;
+
+  /*Spacing*/
+  --spacingXS: 0.5rem;
+  --spacingS: 1rem;
+  --spacingM: 2rem;
+  --spacingL: 3rem;
+  --spacingXL: 4rem;
+
+  /* Typography */
+  --font: "Montserrat", sans-serif;
+  --small: 12px;
+  --h1: 40px;
+  --h1-mobile: 40px;
+  --text: 16px;
+  --text-mobile: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  padding: var(--spacingL);
+
+  border-radius: var(--spacingL);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: var(--h1);
+  margin-bottom: var(--spacingL);
+  margin-top: var(--spacingL);
+}
+
+.container p {
+  margin-bottom: var(--spacingL);
+}
+
+.container button {
+  background-color: var(--red);
+  border: 0;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: var(--text);
+  color: white;
+  border-radius: var(--spacingL);
+  padding: var(--spacingS) var(--spacingM);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 60%;
+  }
+
+  .container {
+    width: 60%;
+  }
+}
