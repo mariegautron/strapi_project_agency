@@ -9,14 +9,14 @@ body {
   min-height: 100vh;
   color: var(--black);
   background-color: var(--red);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -129,6 +129,25 @@ h1 span {
   width: 1em;
   height: 1em;
   margin-right: var(--spacingXS);
+}
+
+.container .back {
+  padding: var(--spacingS) var(--spacingM);
+  border-radius: 30px;
+  border: 1px solid var(--red);
+  font-size: var(--button);
+  font-family: var(--font);
+  color: var(--red);
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  background-color: var(--white);
+  text-decoration: none;
+  margin-bottom: var(--spacingM);
+  margin-top: var(--spacingM);
+}
+
+.container .back:hover {
+  box-shadow: 0px 4px 120px rgba(255, 255, 255, 0.5);
 }
 
 /** RESPONSIVE **/

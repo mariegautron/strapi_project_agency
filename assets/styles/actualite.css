@@ -14,8 +14,21 @@ body {
   align-items: center;
 }
 
+.container .back {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+
+  margin-bottom: var(--spacingS);
+}
+
+.container .back a {
+  color: white;
+  font-size: var(--small);
+}
+
 .container {
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   padding-top: var(--spacingL);
 }
@@ -87,7 +100,8 @@ h1 {
   margin-right: 0.75rem;
 }
 
-.card-meta svg {
+.card-meta svg,
+.container .back svg {
   flex-shrink: 0;
   width: 1em;
   height: 1em;
@@ -102,7 +116,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1400px) {
+  .container {
+    width: 40%;
+  }
 }
