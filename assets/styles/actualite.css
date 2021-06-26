@@ -49,7 +49,6 @@ h1 {
   box-shadow: 0 0 0 1px var(--black5), 0 20px 50px 0 var(--black10);
   border-radius: 15px;
   overflow: hidden;
-  padding: var(--spacingM);
   position: relative;
   margin-bottom: var(--spacingM);
   display: flex;
@@ -59,12 +58,12 @@ h1 {
 
 .card-image {
   margin: 0;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 
 .card-header {
-  margin-top: var(--spacingM);
+  padding: var(--spacingM);
 }
 
 .card-header p {
@@ -74,6 +73,7 @@ h1 {
 }
 
 .card-footer {
+  padding: var(--spacingM);
   font-size: var(--small);
   margin-top: var(--spacingS);
   border-top: 1px solid #ddd;
@@ -117,6 +117,6 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 40%;
+    width: 50%;
   }
 }
