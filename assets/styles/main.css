@@ -1,34 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-
-:root {
-  /* Colors */
-  --white: white;
-  --white-opacity: rgba(255, 255, 255, 0.7);
-  --grey: #a4a2a2;
-  --red: #d62839;
-  --red-light: #fff0f2;
-
-  /*Spacing*/
-  --spacingXS: 0.5rem;
-  --spacingS: 1rem;
-  --spacingM: 2rem;
-  --spacingL: 3rem;
-  --spacingXL: 4rem;
-
-  /* Typography */
-  --font: "Montserrat", sans-serif;
-  --small: 12px;
-  --h1: 80px;
-  --h1-mobile: 40px;
-  --text: 20px;
-  --text-mobile: 16px;
-}
-
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: url("./assets//images/background.png") no-repeat;
+  background: url("../images/background.png") no-repeat;
   background-size: cover;
   font-family: var(--font);
   height: 100vh;
@@ -52,7 +26,7 @@ header {
 .container h1 {
   text-transform: uppercase;
   color: var(--white);
-  font-size: var(--h1-mobile);
+  font-size: var(--h1);
   margin-bottom: var(--spacingM);
 }
 
@@ -63,9 +37,37 @@ header {
 
 .container p {
   color: var(--white-opacity);
-  font-size: var(--text-mobile);
+  font-size: var(--text);
   line-height: 140%;
-  margin-bottom: var(--spacingM);
+  margin-bottom: var(--spacingL);
+}
+
+.container .actu-btn {
+  padding: var(--spacingS) var(--spacingM);
+  border-radius: 30px;
+  border: 1px solid var(--red);
+  font-size: var(--button);
+  font-family: var(--font);
+  color: var(--red);
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  background-color: var(--white);
+  text-decoration: none;
+}
+
+.container .actu-btn:hover {
+  box-shadow: 0px 4px 120px rgba(255, 255, 255, 0.5);
+}
+
+.container .newsletter {
+  background-color: var(--red);
+  padding: var(--spacingS);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: var(--spacingL);
 }
 
 .container .newsletter p {
@@ -88,6 +90,7 @@ header {
   outline: none;
   font-family: var(--font);
   color: white;
+  width: 70%;
 }
 
 .container .newsletter input[type="text"]::placeholder {
@@ -148,23 +151,20 @@ header {
     display: flex;
     align-items: center;
   }
-
-  .container p {
-    font-size: var(--text);
-  }
-
-  .footer p {
-    font-size: var(--small);
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .container h1 {
-    font-size: var(--h1);
-  }
-
   .container p {
     width: 50%;
+  }
+
+  .container .newsletter {
+    width: 70%;
+    background-color: transparent;
+  }
+
+  .container .newsletter input[type="text"] {
+    width: 100%;
   }
 }
 
@@ -176,9 +176,5 @@ header {
 
   .footer {
     margin-top: 0;
-  }
-
-  .container .newsletter input[type="text"] {
-    width: 30%;
   }
 }

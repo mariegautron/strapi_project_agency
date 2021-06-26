@@ -1,29 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-
-:root {
-  /* Colors */
-  --white: white;
-  --white-opacity: rgba(255, 255, 255, 0.7);
-  --grey: #a4a2a2;
-  --red: #d62839;
-  --red-light: #fff0f2;
-
-  /*Spacing*/
-  --spacingXS: 0.5rem;
-  --spacingS: 1rem;
-  --spacingM: 2rem;
-  --spacingL: 3rem;
-  --spacingXL: 4rem;
-
-  /* Typography */
-  --font: "Montserrat", sans-serif;
-  --small: 12px;
-  --h1: 40px;
-  --h1-mobile: 40px;
-  --text: 16px;
-  --text-mobile: 16px;
-}
-
 html,
 body {
   margin: 0;
