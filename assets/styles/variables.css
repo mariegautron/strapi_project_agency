@@ -24,6 +24,7 @@
   --font: "Montserrat", sans-serif;
   --small: 12px;
   --h1: 40px;
+  --h2: 25px;
   --title: 18px;
   --text: 16px;
   --button: 14px;
@@ -32,6 +33,7 @@
 @media screen and (min-width: 768px) {
   :root {
     --h1: 80px;
+    --h2: 40px;
     --small: 14px;
     --title: 22px;
     --button: 16px;
