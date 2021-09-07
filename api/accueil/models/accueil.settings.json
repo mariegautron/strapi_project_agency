@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "accueils",
+  "info": {
+    "name": "accueil",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "navbar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "utils.navbar"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "accueil.banner"
+    }
+  }
+}

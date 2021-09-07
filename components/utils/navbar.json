@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_utils_navbars",
+  "info": {
+    "name": "Navbar",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "label2": {
+      "type": "string"
+    },
+    "label3": {
+      "type": "string"
+    },
+    "label4": {
+      "type": "string"
+    },
+    "label5": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}
